@@ -37,10 +37,10 @@ public class StudentController {
         return s;
     }
 
-    // Final Activity: uncomment this method (and the test) then push
-    // @GetMapping("/health")
-    // public Map<String, String> health() {
-    //     logger.info("Health check called");
-    //     return Map.of("status", "UP");
-    // }
+   //  Final Activity: uncomment this method (and the test) then push
+     @GetMapping("/health")
+     public Map<String, String> health() {
+        logger.info("Health check called");
+         return Map.of("status", "UP");
+     }
 }
