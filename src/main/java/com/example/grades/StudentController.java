@@ -38,9 +38,9 @@ public class StudentController {
     }
 
    //  Final Activity: uncomment this method (and the test) then push
-     @GetMapping("/health")
-     public Map<String, String> health() {
-        logger.info("Health check called");
-         return Map.of("status", "UP");
-     }
+   @GetMapping("/health")
+public Map<String, String> health() {
+    logger.info("Health check called");
+    return Map.of("status", "UP");
+}
 }

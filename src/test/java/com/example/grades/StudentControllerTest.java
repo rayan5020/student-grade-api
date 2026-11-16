@@ -33,10 +33,10 @@ public class StudentControllerTest {
     }
 
     // Final Activity: uncomment this test
-    // @Test
-    // void healthCheckShouldReturnUp() throws Exception {
-    //     mockMvc.perform(get("/api/health"))
-    //             .andExpect(status().isOk())
-    //             .andExpect(jsonPath("$.status").value("UP"));
-    // }
+     @Test
+     void healthCheckShouldReturnUp() throws Exception {
+        mockMvc.perform(get("/api/health"))
+                .andExpect(status().isOk())
+                 .andExpect(jsonPath("$.status").value("UP"));
+     }
 }
